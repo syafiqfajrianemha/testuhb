@@ -40,7 +40,7 @@ class EmployeeController extends Controller
 
         Employee::create([
             'name' => $request->name,
-            'posistion' => $request->position,
+            'position' => $request->position,
             'salary' => $request->salary,
             'department_id' => $request->department_id
         ]);
@@ -81,7 +81,7 @@ class EmployeeController extends Controller
 
         $employee->update([
             'name' => $request->name,
-            'posistion' => $request->position,
+            'position' => $request->position,
             'salary' => $request->salary,
             'department_id' => $request->department_id
         ]);
