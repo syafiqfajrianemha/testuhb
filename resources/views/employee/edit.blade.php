@@ -20,14 +20,14 @@
                         </div>
 
                         <div class="mt-4">
-                            <x-input-label for="role" :value="__('Position')" />
-                            <x-select-option id="role" class="block mt-1 w-full" name="role" :value="old('role')">
-                                <option selected disabled>Choose Role</option>
+                            <x-input-label for="position" :value="__('Position')" />
+                            <x-select-option id="position" class="block mt-1 w-full" name="position" :value="old('position')">
+                                <option selected disabled>Choose Position</option>
                                 <option value="manager" @if ($employee->position == "manager") selected @endif>Manager</option>
                                 <option value="staff" @if ($employee->position == "staff") selected @endif>Staff</option>
                                 <option value="admin" @if ($employee->position == "admin") selected @endif>Admin</option>
                             </x-select-option>
-                            <x-input-error :messages="$errors->get('role')" class="mt-2" />
+                            <x-input-error :messages="$errors->get('position')" class="mt-2" />
                         </div>
 
                         <div>
